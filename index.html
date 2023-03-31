@@ -7,188 +7,125 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo.css" />
+    <!--Aqui empieza el link de los iconos-->
     <script src="https://kit.fontawesome.com/7739207e90.js" crossorigin="anonymous"></script>
-    <title>YairHP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Aqui termina el link de los iconos-->
+    <title>Yair HP</title>
 </head>
-<body>
-    <header id="mynav">
-    <nav class="navbar navbar-dark bg-dark fixed-top" id="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#" id="nombre">Yair Hernandez</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" id="button1" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<body class="body">
+        <nav class="navbar navbar-dark bg-dark fixed-top navegador">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" id="nombre">Yair Hernandez</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" id="button1" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#secccion1">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#secccion2">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Conocimiento</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contactar</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#proyectos">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#tecnologia">Conocimiento</a>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#contactar">Contactar</a>
-                  </li>
-              </ul>
+          </nav>
+          <section id="secccion1">
+            <div style="padding-left: 20px;">
+            <!--
+              <button onclick="modoclaro()" class="botonclaro">Modo claro</button>
+              <button onclick="modooscuro()" class="botonooscuro">Modo oscuro</button>--> 
+              <a onclick="modoclaro()"><i class="fa-sharp fa-solid fa-sun" style="font-size:36px;color: #ff9800;" aria-hidden="true"></i></a>
+              <a onclick="modooscuro()"><i class="fa-solid fa-moon" style="font-size:36px;color: #ff9800;" aria-hidden="true"></i></a>
+            </div>
+          </section>
+        <section id="inicio" class="outer">
+        <div class="container">
+        <div class="row">
+        <div class="col-sm">
+        <div class="content-center">
+        <div class="divcenter">
+            <h1 class="holasoy">HOLA SOY 
+            <div class="inner">
+              <span>
+                Yair Hernandez<br>
+                Web Developer<br>
+                Backend Developer
+              </span>
+            </div>
+              </h1>
+        </div>
+        <div class="divcenter">
+         <h1 class="info1">Soy desarrollador Multiplataforma.</h1> 
+        </div>
+        <div class="divcenter">
+        <h1 class="info2"> Yo haré tu vida llena de mucha tecnología.</h1>
+      </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svge1"><path class="svge1_0" fill="#ff9800" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      <br>
+      <br>
+      <section id="secccion2">
+        <div class="divcenter">
+          <p class="info3"><stron>Algunos de mis proyectos</stron><strong style="color: #ff9800;"> realizados recientemente</strong></p>
+        </div>
+        <br>
+        <div class="container text-center">
+          <div class="row align-items-center">
+            <div class="col">
+              <a href="#" target="_blank"><img loading="lazy" src="http://imgfz.com/i/g1EIX8l.png" class="img-fluid" height="360" id="img1"/></a>
+              <div class="btn-box">
+                <a href="https://github.com/YairHernandezPech/PaginaStreaming" target="_blank" class="btn btn-lg mt-4 botongithub"><i class="fab fa-github"></i> Ver Github</a>    
+              </div>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img loading="lazy" src="http://imgfz.com/i/ySBnjZe.png" class="img-fluid" height="360" id="img1"/></a>
+              <div class="btn-box">
+                <a href="https://github.com/YairHernandezPech/Sesiones" target="_blank" class="btn btn-lg mt-4 botongithub"><i class="fab fa-github"></i> Ver Github</a>    
+              </div>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img loading="lazy" src="http://imgfz.com/i/bfzsi6x.png" class="img-fluid img1" height="360" id="img1"/></a>
+              <div class="btn-box">
+                <a href="https://mi-api-rest.fly.dev/" target="_blank" class="btn btn-lg mt-4 botongithub"><i class="fab fa-github"></i> Ver Github</a>    
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <section class="imagen" id="inicio">
-      <div class="container">
-        <div class="content-center">
-          <div class="slide-effect">
-            <h1 class="hidden">Programdor en Mérida</h1>
-            <p class="slide-title font-weight-bold" id="hola">Hola Soy</p>
-            <ul class="slide-text font-weight-bold ls-none">
-              <li>Yair Hernandez</li>
-              <li class="web-dev">Web Developer</li>
-              <li class="web-des">Backend Developer</li>
+      </section>
+        <!---li*4>a-->
+        <section id="secccion3">
+         <div class="divcenter">
+          <a href="img/CV.pdf" target="_blank" download="CVEdilson" class=" btn btn-lg descargar"><i class="fas fa-file-download mr-2"></i>Descargar CV</a>
+         </div>
+         <br>
+          <div class="container">
+            <ul class="ul1">
+              <li class="li1"><a href="#"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+              <li class="li1"><a href="#"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+              <li class="li1"><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+              <li class="li1"><a href="#"><i class="fa-brands fa-tiktok"aria-hidden="true"></i></a></li>
             </ul>
           </div>
-          <p class="text-muted movil-text text-center mb-0 font-weight-bold">Soy desarrollador Multiplataforma.</p>
-          <p class="mb-4 text-muted movil-text text-2 text-center mt-0">Yo haré tu vida llena de mucha tecnología.</p>
-        </div>   
-      </div>
-    </section>
-
-    <section class="bg-dark py-5" id="proyectos">
-      <div class="container">
-        <h1 class="text-center mb-5 slideTextLeft text-white font-weight-bold">Mira mis más recientes <span>proyectos de ahora</span></h1>
-        <div class="row d-flex">
-          <div class="col-6 col-md-4 mb-4">
-
-            <a href="#" target="_blank"><img loading="lazy" src="http://imgfz.com/i/g1EIX8l.png" class="img-fluid image-shadow-3 img-hover w-100" alt="Sitio web moderno" height="360"/></a>
-            <div class="btn-box">
-              <a href="https://github.com/YairHernandezPech/PaginaStreaming" target="_blank" class="btn btn-lg mt-4 btn-github"><i class="fab fa-github"></i> Ver Github</a>
-            </div>
-          </div>
-  
-          <div class="col-6 col-md-4 mb-4">
-            <a href="#" target="_blank"><img loading="lazy" src="http://imgfz.com/i/ySBnjZe.png" class="img-fluid image-shadow-3 img-hover w-100" alt="Aplicación web del clima en tu ciudad" height="360"/></a>
-            <div class="btn-box">
-              <a href="https://github.com/YairHernandezPech/Sesiones" target="_blank" class="btn btn-lg mt-4 btn-github"><i class="fab fa-github"></i> Ver Github</a>
-            </div> 
-          </div>
-  
-          <div class="col-6 col-md-4 mb-4">
-            <a href="#" target="_blank"><img loading="lazy" src="http://imgfz.com/i/bfzsi6x.png" class="img-fluid image-shadow-3 img-hover w-100" alt="Sitio web de despacho de cobranzas" height="360"/></a>
-            <div class="btn-box">
-              <a href="https://github.com/YairHernandezPech?tab=repositories" target="_blank" class="btn btn-lg mt-4 btn-github"><i class="fab fa-github"></i> Ver Github</a>    
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <a href="https://github.com/YairHernandezPech" target="_blank" class="btn hover-buttons shadow btn-vermas">Ver Más</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5 bg-dark" id="tecnologia">
-      <div class="container">
-        <h1 class="text-center mb-5 font-weight-bold text-white slideTextLeft">Tecnologías que <span>utilizo</span></h1>
-        
-        <div class="row mb-5 mt-5">
-          <div class="col-md-3 col-4 mt-5 mb-5">
-            <div class="image-box">
-              <img loading="lazy" src="img/HTML5.png" class="img-fluid mt-3 mx-auto" height="100" width="100" alt="logo de html5" data-toggle="tooltip" data-placement="top" title="Html5" />
-            </div>
-          </div>
-          <div class="col-md-3 col-4 mt-5 mb-5">
-            <div class="image-box">
-              <img loading="lazy" src="img/css.png" class="img-fluid mt-3 mx-auto" height="100" width="100" alt="logo de css3" data-toggle="tooltip" data-placement="top" title="CSS3" />
-            </div>
-          </div>
-          <div class="col-md-3 col-4 mt-5 mb-5">
-            <div class="image-box">
-              <img loading="lazy" src="img/boostrap.png" class="img-fluid mt-3 mx-auto" height="100" width="100" alt="logo de Bootstrap" data-toggle="tooltip" data-placement="top" title="Bootstrap" />
-            </div>
-          </div>
-          <div class="col-md-3 col-4 mt-5 mb-5">
-            <div class="image-box">
-              <img loading="lazy" src="img/php.png" class="img-fluid mt-3 mx-auto d-block" height="100" width="100" alt="logo de php" data-toggle="tooltip" data-placement="top" title="PHP" />
-            </div>
-          </div>
-          <div class="col-md-3 col-4 mt-5 mb-5">
-            <div class="image-box">
-              <img loading="lazy" src="img/mysql.png" class="img-fluid mt-3 mx-auto d-block" height="100" width="100" alt="logo de MYSQL" data-toggle="tooltip" data-placement="top" title="MySQL" />
-            </div>
-          </div>
-          <div class="col-md-3 col-4 mt-5 mb-5">
-            <div class="image-box">
-              <img loading="lazy" src="img/nodejs.png" alt="logo de Nodejs" height="100" width="100" class="img-fluid d-block w-100 mt-3 mx-auto" data-toggle="tooltip" data-placement="top" title="Node js" />
-            </div>
-          </div>
-          <div class="col-md-3 col-4 mt-5 mb-5">
-            <div class="image-box">
-              <img loading="lazy" src="img/flutter.png" class="img-fluid mt-3 mx-auto d-block" height="100" width="100" alt="logo de Flutter" data-toggle="tooltip" data-placement="top" title="Flutter" />
-            </div>
-          </div>
-          <div class="col-md-3 col-4 mt-5 mb-5">
-            <div class="image-box">
-              <img loading="lazy" src="img/java.png" alt="logo de java" data-toggle="tooltip" height="100" width="100" data-placement="top" title="Java"  class="img-fluid d-block mt-3 mx-auto" />
-            </div>
-          </div>
-          <div class="col-md-3 col-4 mt-5 mb-5">
-            <div class="image-box">
-              <img loading="lazy" src="img/git.png" alt="logo de git" data-toggle="tooltip" height="100" width="100" data-placement="top" title="Git"  class="img-fluid d-block mt-3 mx-auto" />
-            </div>
-          </div>
-          <div class="col-md-3 col-4 mt-5 mb-5">
-            <div class="image-box">
-              <img loading="lazy" src="img/dart.png" alt="logo de dart" data-toggle="tooltip" height="100" width="100" data-placement="top" title="Dart"  class="img-fluid d-block mt-3 mx-auto" />
-            </div>
-          </div>
-          <div class="col-md-3 col-4 mt-5 mb-5">
-            <div class="image-box">
-              <img loading="lazy" src="img/js.png" alt="logo de javascript" data-toggle="tooltip" height="100" width="100" data-placement="top" title="JavaScript"  class="img-fluid d-block mt-3 mx-auto" />
-            </div>
-          </div>
-          <div class="col-md-3 col-4 mt-5 mb-5">
-            <div class="image-box">
-              <img loading="lazy" src="img/mongo.png" alt="logo de mongodb" data-toggle="tooltip" height="100" width="100" data-placement="top" title="MongoDb"  class="img-fluid d-block mt-3 mx-auto" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5 bg-dark" id="contactar" >
-      <div class="container">
-      <h1 class="text-center" style="color: white;">Contacta al <span>programador</span></h1>
-    </div>
-    </section>
-    <footer class="bg-dark">
-      <div class="container text-center">
-        <div class="row text-center pt-4">
-          <div class="col-md-12 mb-5">
-            <a href="img/CV.pdf" target="_blank" download="CVEdsonRosales" class="btn btn-lg btn-github"><i class="fas fa-file-download mr-2"></i>Descargar CV</a>
-          </div>
-          <div class="col-md-3 col-6 text-left mb-3 mt-3">
-            <a href="mailto:edilsonchelitohernandez011@gmail.com" target="_blank" 
-              role="button"><i class="fa fa-envelope main-color" id="icontam"></i></a>
-            <a href="https://github.com/YairHernandezPech" target="_blank"
-              role="button"><i class="fa fa-github main-color" id="icontam"></i></a>
-            <a href="https://wa.link/c0zjq8" target="_blank"
-              role="button"><i class="fa fa-whatsapp main-color" id="icontam"></i></a>
-            <a href="https://www.facebook.com/yair.hernandez.712" target="_blank"
-              role="button"><i class="fa fa-facebook-official main-color" id="icontam"></i></a>
-          </div>
-        </div>
-        <div class="lead footer-copyright text-center py-3 text-white"><span class="text-white">© </span><span id="year" class="text-white"></span>
-          <span class="text-white">Copyright: </span>
-          <a>Edilson Yair - <span>Desarrollador Multiplataforma</span></a>
-        </div>
-      </div>
-    </footer>
+        </section>
+        <script src="index.js"></script>
 </body>
 </html>
