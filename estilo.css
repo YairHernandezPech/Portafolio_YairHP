@@ -113,7 +113,7 @@ body{
   font-size: 30px;
 }
 
-#img1{
+.img1{
   -webkit-filter: drop-shadow(5px 5px 25px #ff9800);
   filter: drop-shadow(5px 5px 15px #ff9800) brightness(60%);
   opacity: 1;
@@ -121,7 +121,7 @@ body{
   border-radius: 7px;
 }
 
-#img1:hover{
+.img1:hover{
   transform: scale(1.15);
   opacity: 1;
   transition: 0.3s ease-in-out;
@@ -157,7 +157,7 @@ body{
 
 
   #secccion3{
-    margin-top: 250px;
+    margin-top: 100px;
   }
 /*seccion 3*/
 .descargar{
@@ -170,6 +170,25 @@ body{
   color: #fff;
   background:  #ff9800;
 }
+
+/*estilo de la seccion 4*/
+.imgicons{
+  margin-top: 60px;
+  height: 120px;
+  width: 125px;
+  border-radius: 50%
+}
+.imgicons:hover{
+  transform: scale(1.50);  
+}
+.info4{
+  color: white;
+  font-size: 30px;
+}
+.copyrigth{
+  color: white;
+}
+
 
 /*aqui empieza el codigo de los botones fosforecentes*/
 
@@ -284,6 +303,14 @@ body{
     height:63px;
     line-height: 66px;
 }
+.imgicons{
+  height: 60px;
+  width: 65px;
+  border-radius: 50%
+}
+.copyrigth{
+  font-size: 13px;
+}
 }
 
 /**Tablet**/
@@ -313,3 +340,5 @@ body{
     opacity: 0;
   }
 }
+
+/*height: 40px;width: 45px;border-radius: 50%*/
